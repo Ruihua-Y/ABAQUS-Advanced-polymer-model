@@ -11,7 +11,9 @@
 10. if the Explicit analysis uses `double=explicit`, please switch to `vaba_param_dp.inc` and recompile.
 11. BB_UMAT material parameters：
 props(1)  Bulk modulus κ
+
 props(2)  A-network (equilibrium) shear modulus μ_eq
+
 props(3)  B-network (viscous) shear modulus μ_v
 props(4)  Number of segments in A-network (locking parameter N_eq)
 props(5)  Number of network chain segments B, N_v
@@ -23,7 +25,7 @@ props(10) Newton convergence tolerance tol
 props(11)  Newton maximum iteration count maxit
 Status variables (*DEPVAR = 6)
 SDV(1–6)  Inverse of the right Cauchy-Green tensor of the viscous intermediate configuration C_v⁻¹
-12. BB_Mullins_UMAT material parameters：
+13. BB_Mullins_UMAT material parameters：
 props(1)  Bulk modulus κ
 props(2)  A-network (equilibrium) shear modulus μ_eq
 props(3)  B-network (viscous) shear modulus μ_v
@@ -46,7 +48,7 @@ SDV(7)  U_max (maximum energy in damage history)
 SDV(8)  U_min (minimum energy in damage history)
 SDV(9)  η (current damage reduction factor, 1 = no damage) 
 SDV(10)  α_d (recovery factor) 
-13. BB_UMAT2 material parameters：
+14. BB_UMAT2 material parameters：
 props(1)  μ  Initial shear modulus (Network A) 
 props(2)  λ_L Locking stretch 
 props(3)  κ  Bulk modulus
@@ -65,7 +67,7 @@ SDV(2)  Cumulative equivalent viscous flow Δγ
 SDV(3)  Chain strain ½ln(tr(b)/3)
 SDV(4)  Reserved
 SDV(5–13)  Viscous deformation gradient Fᵛ
-14. BB_Mullins_UMAT2 material parameters：
+15. BB_Mullins_UMAT2 material parameters：
 props(1)  μ  Initial shear modulus (Network A) 
 props(2)  λ_L Locking stretch 
 props(3)  κ  Bulk modulus
@@ -93,7 +95,7 @@ SDV(14)  U_max (maximum energy in damage history)
 SDV(15)  U_min (minimum energy in damage history)
 SDV(16)  η (current damage reduction factor, 1 = no damage) 
 SDV(17)  α_d (recovery factor)
-15. BB_UMAT4 material parameters：
+16. BB_UMAT4 material parameters：
 props(1)  R   Universal gas constant 
 props(2)  k_B   Boltzmann constant (used with N_S)  
 props(3)  G_B   B network shear modulus 
@@ -117,8 +119,8 @@ SDV(1-6)  Total logarithmic strain ε
 SDV(7-12)  B-network back stress deviator τ_B^dev (Voigt)
 SDV(13-15)  Conformational network principal direction strain ε_N
 SDV(16-18)  Total principal strain from the previous increment step ε_p
-16. HCM70_UMAT_VUMAT
-17. In this file, props(1) is model number (1–70), selected from the model table below;
+17. HCM70_UMAT_VUMAT
+18. In this file, props(1) is model number (1–70), selected from the model table below;
 props(2 … nprops-1) are material parameters for that model (in the order given in the model table);
 props(nprops) is bulk modulus for the nearly incompressible penalty function W_vol = ½·KBULK·(J−1)²;
 1  3-Param Gent  α, μ, I_m
