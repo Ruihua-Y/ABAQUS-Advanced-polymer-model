@@ -10,8 +10,8 @@
 9. Before compiling the HCM70 file containing VUMAT, you must prepare ‘vaba_param.inc’  and rename it;
 10. if the Explicit analysis uses `double=explicit`, please switch to `vaba_param_dp.inc` and recompile.
 11. BB_UMAT material parameters：
-- #props(1)  Bulk modulus κ
-- #props(2)  A-network (equilibrium) shear modulus μ_eq
+- props(1)  Bulk modulus κ
+- props(2)  A-network (equilibrium) shear modulus μ_eq
 - props(3)  B-network (viscous) shear modulus μ_v
 - props(4)  Number of segments in A-network (locking parameter N_eq)
 - props(5)  Number of network chain segments B, N_v
@@ -29,16 +29,16 @@
 -props(3)  B-network (viscous) shear modulus μ_v
 -props(4)  Number of segments in A-network (locking parameter N_eq)
 -props(5)  Number of network chain segments B, N_v
-props(6)  Reference flow rate coefficient γ_ref
-props(7)  Creep (chain elongation) exponent C 
-props(8)  Stress exponent m
-props(9)  Regularization coefficient ε_reg
-props(10)  tol Newton tolerance tol 
-props(11)  Newton maximum iterations maxit
-props(12)  Damage parameter r 
-props(13)  Damage energy scale û 
-props(14)  Damage parameter β 
-props(15)  Minimum recovery factor a_min
+-props(6)  Reference flow rate coefficient γ_ref
+-props(7)  Creep (chain elongation) exponent C 
+-props(8)  Stress exponent m
+-props(9)  Regularization coefficient ε_reg
+-props(10)  tol Newton tolerance tol 
+-props(11)  Newton maximum iterations maxit
+-props(12)  Damage parameter r 
+-props(13)  Damage energy scale û 
+-props(14)  Damage parameter β 
+-props(15)  Minimum recovery factor a_min
 props(16)  Recovery exponent b
 Status variables (*DEPVAR = 10)
 SDV(1–6)  Inverse of the right Cauchy-Green tensor of the viscous intermediate configuration C_v⁻¹
