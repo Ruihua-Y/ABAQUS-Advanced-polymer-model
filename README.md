@@ -191,3 +191,11 @@
 - 68 SpT G_c, G_e, N
 - 69  Tube  G_c, G_e, β
 - 70  Valanis-Landel  μ
+19. standardU.dll is used for Abaqus/Standard, while explicitU.dll is used for Abaqus/Explicit; both are compiled from the same source file, but their names cannot be interchanged.
+20. The number of *DEPVAR for each model must be ≥ the requirements in the table above (BB_UMAT2 /BB_Mullins_UMAT2 at least 13; BB_UMAT4 must be 18; HCM70 at least 1).
+21. The number of CONSTANTS in *USER MATERIAL must be provided in full according to the order in the table above;BB_UMAT4 must have exactly 18.
+22. The analysis must include a temperature field (e.g., *TEMPERATURE or a coupled thermal-mechanical analysis), with temperature in units of K.
+23. HCM70 does not support plane stress elements; the BB series UMAT only supports 3D (ndi=3/nshr=3).
+24. All viscoelastic/damage models use implicit Newton iteration, and the time increment is automatically reduced when convergence fails; if convergence still fails, optional numerical parameters can be adjusted.
+25. It is recommended that the bulk modulus be 1000–5000 times the shear modulus 
+26. explicitU.dll is compiled with the default single precision (vaba_param_sp.inc); If the job uses double=explicit, the library must be recompiled with vaba_param_dp.inc.
