@@ -10,10 +10,8 @@
 9. Before compiling the HCM70 file containing VUMAT, you must prepare ‘vaba_param.inc’  and rename it;
 10. if the Explicit analysis uses `double=explicit`, please switch to `vaba_param_dp.inc` and recompile.
 11. BB_UMAT material parameters：
-props(1)  Bulk modulus κ
-
-props(2)  A-network (equilibrium) shear modulus μ_eq
-
+#props(1)  Bulk modulus κ
+#props(2)  A-network (equilibrium) shear modulus μ_eq
 props(3)  B-network (viscous) shear modulus μ_v
 props(4)  Number of segments in A-network (locking parameter N_eq)
 props(5)  Number of network chain segments B, N_v
