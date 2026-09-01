@@ -1,4 +1,5 @@
 # ABAQUS-Advanced-polymer-model
+# The source code may have some potential issues and is for communication and learning purposes only
 1. All files(umat/vumat) were written and compiled by Ruihua Yin. If you are willing to collaborate with us, we will share the source code
 2. BB_UMAT is the Bergström–Boyce dual-network finite viscoelastic model
 3. BB_UMAT2 is the BB model (F·Fv decomposition)
